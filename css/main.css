@@ -106,20 +106,50 @@ body {
   padding: 2em;
   font-size: 1em;
   height: 100%;
+  text-transform: lowercase;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
+header, footer, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+header {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 3%;
+    background-color:rgb(255, 74, 74);
+    padding: 0 2% 0 2%;
+}
+
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #000;
   line-height: 1.5em;
-  font-size: 1.6em;
+  font-size: 1em;
   background-color: #c3eaff;
   height: 300px;
   width: 30%;
@@ -132,6 +162,7 @@ body {
 .div-1 {
     border-right: 3px solid black;
     border-right-style: dotted;
+    padding-right: 2%;
 }
 
 .div-3 {
@@ -140,6 +171,14 @@ body {
     padding-left: 2%;
 }
 
+footer {
+    margin-top: 3%;
+}
+
+footer, span, a {
+    font-weight: 700;
+    color: #fff;
+}
 
 
 /* ==========================================================================
